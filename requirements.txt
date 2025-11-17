@@ -1,5 +1,5 @@
 fastapi
-uvicorn[standard]
+uvicorn==0.30.6
 pydantic
 pandas
 numpy
