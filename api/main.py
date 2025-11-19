@@ -4,4 +4,6 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"status": "online", "message": "API pronostic foot OK"}
+    return {"status": "ok", "message": "API en ligne ! 🚀"}
+
+# IMPORTANT : NE RIEN METTRE D'AUTRE
