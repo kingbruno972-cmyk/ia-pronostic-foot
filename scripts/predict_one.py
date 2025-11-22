@@ -1,15 +1,17 @@
 # scripts/predict_one.py
 
-def predict_one_match(home: str, away: str) -> dict:
+from typing import Dict
+
+def predict_one_match(home: str, away: str) -> Dict[str, str]:
     """
-    Fonction simple pour prédire un match entre deux équipes.
-    Pour l'instant, c'est une version "fake" qui renvoie juste un message.
-    On branchera le vrai modèle (model_1x2.pkl) plus tard.
+    Fonction appelée par l'API /predict_one.
+    Pour l'instant, c'est un mock (pas de vrai modèle).
     """
+
     return {
         "status": "ok",
         "home": home,
         "away": away,
         "prediction": "TODO_brancher_modele",
         "comment": "Fonction predict_one_match exécutée depuis scripts/predict_one.py."
-    } 
+    }
